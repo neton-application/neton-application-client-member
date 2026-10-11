@@ -1,13 +1,13 @@
 import { defineFrontModule } from "@neton/application-client-contract";
 
-/** 用户中心（通用）：任何 Neton C 端产品都可装配。 */
+/**
+ * 会员成长（通用）：邀请等成长能力的用户端页面。
+ * 账号相关页面（资料、密码、邮箱、手机）在 client-account。
+ */
 export default defineFrontModule({
   id: "member",
   contractVersion: "1.0.0",
   pages: [
-    { key: "member/profile/index", path: "/member/profile", entry: "profile", rendering: "client", title: "个人资料" },
-    { key: "member/password/index", path: "/member/password", entry: "password", rendering: "client", title: "修改密码" },
-    { key: "member/email/index", path: "/member/email", entry: "email", rendering: "client", title: "绑定邮箱" },
-    { key: "member/mobile/index", path: "/member/mobile", entry: "mobile", rendering: "client", title: "绑定手机" },
+    { key: "member/invite/index", path: "/member/invite", entry: "invite", rendering: "client", title: "邀请好友" },
   ],
 });
