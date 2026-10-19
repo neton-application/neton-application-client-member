@@ -7,6 +7,10 @@ import { defineFrontModule } from "@neton/application-client-contract";
 export default defineFrontModule({
   id: "member",
   contractVersion: "1.0.0",
+  locales: [
+    { lang: "zh-CN", entry: "zh-CN" },
+    { lang: "en-US", entry: "en-US" },
+  ],
   pages: [
     { key: "member/invite/index", path: "/member/invite", entry: "invite", rendering: "client", title: "邀请好友" },
   ],
